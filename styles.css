@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Odibee+Sans&display=swap');
+
+body {
+    background-color: rgb(91,44,137);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.typing-effect{
+ font-family: 'League Gothic', sans-serif;
+ font-size: 2em;
+ width: 42ch;
+ animation: typing 2s steps(22), effect .5s step-end infinite alternate;
+ white-space: nowrap;
+ overflow: hidden;
+ color: rgb(242,209,82);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes effect {
+    50% {
+      border-color: transparent
+    }
+  }
